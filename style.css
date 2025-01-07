@@ -14,15 +14,19 @@ body {
   justify-content: center;
   background-size: cover;
   background-image: url("./images/bg3.svg");
+  
   font-weight: bold;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;
+ 
   background-position: top; 
+
 }
 
 .paper {
+  
   background-position: top;
   padding: 30px 40px;
   transform: rotateZ(-5deg);
