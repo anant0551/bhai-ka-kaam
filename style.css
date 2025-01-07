@@ -19,11 +19,12 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top; 
 }
 
 .paper {
-  background-size: cover; 
-  background-position: center center;
+  background-position: top;
   padding: 30px 40px;
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
