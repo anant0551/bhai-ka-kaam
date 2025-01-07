@@ -7,31 +7,42 @@
 }
 
 
+p {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  color: rgba(96, 6, 252, 0.856);
+  opacity: 0.85;
+  user-select: none;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+} 
+
+.paper:hover {
+  transform: rotateZ(0deg) scale(1.05);
+  box-shadow: 2px 20px 25px 0px rgba(0, 0, 0, 0.7);
+}
+ 
 body {
-  height: 200vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
+  background-size: 1000px;
+  background-position: center center;
   background-image: url("./images/bg3.svg");
-  
   font-weight: bold;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-repeat: no-repeat;
- 
-  background-position: top; 
-
-}
+} 
 
 .paper {
-  
-  background-position: top;
-  padding: 30px 40px;
+  padding: 20px 100px;
   transform: rotateZ(-5deg);
-  box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
-  position:absolute;
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  background-position: top;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 420px;
   border: 2px solid #363636;
@@ -39,11 +50,7 @@ body {
   backdrop-filter: blur(30px);
   border-radius: 30px;
   color: #fff;
-}
 
-.paper:hover {
-  transform: rotateZ(0deg) scale(1.05);
-  box-shadow: 2px 20px 25px 0px rgba(0, 0, 0, 0.7);
 }
 
 .paper.heart {
@@ -52,26 +59,15 @@ body {
   height: 200px;
   padding: 0;
   border-radius: 50%;
-  background-color: #ffebeb;
 }
 
 .paper.image {
-  padding: 20px; /* Increased padding for larger size */
-  width: 300px; /* Increased width for larger appearance */
-  height: auto;
+  padding: 10px;
 }
-
 .paper.image p {
   font-size: 20px;
-  text-align: center;
 }
 
-video {
-  max-height: 300px;
-  width: 100%;
-  transform: rotate(270deg); /* Adjust if necessary */
-  border-radius: 10px;
-}
 
 .paper.heart::after {
   content: "";
@@ -87,12 +83,10 @@ video {
   opacity: 0.6;
 }
 
-p {
-  font-family: 'Gloria Hallelujah', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  color: rgba(96, 6, 252, 0.856);
-  opacity: 0.85;
-  user-select: none;
-  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+
+video {
+  max-height: 300px;
+  width: 100%;
+  transform: rotate(270deg); 
+  border-radius: 10px;
 }
